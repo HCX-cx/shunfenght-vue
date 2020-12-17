@@ -29,7 +29,7 @@
       login:function () {
         axios.post("api/admin/login",this.adminUser).then(res=>{
           if (res.data.code==200){
-            this.$router.push("/findAll")
+            this.$router.push("/bofore")
           }else{
             alert(res.data.message)
           }
